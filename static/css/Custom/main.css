@@ -143,3 +143,20 @@ body {
     width: 400px;
     margin-top: 20px;
 }
+
+.bg-op-light {
+    background: rgba(255, 255, 255, 0.6);
+}
+
+.bg-op-dark {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.group-header {
+    /* background-color: white; */
+    background: rgba(255, 255, 255, 0.6);
+}
+
+/* .d-md-flex {
+    opacity: 0.5;
+} */ */
