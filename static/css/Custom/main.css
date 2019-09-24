@@ -118,6 +118,14 @@ body {
     background-size:cover;
 }
 
+#bg-80 {
+    background-image: url(/images/shared/bg_80s.jpg);
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size:cover;
+}
+
 .profile {
     margin: auto;
     height: 200px;

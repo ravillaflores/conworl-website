@@ -1,0 +1,303 @@
+<!doctype html>
+
+<html>
+<head>
+	<title>ConWorl - Rise of Pop and Rock - The 80's </title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- javascript -->
+	<script src="../js/jquery-3.4.1.min.js"></script>
+	<script src="../js/bootstrap.js"></script>
+	<script src="../js/bootstrap.bundle.js"></script>
+	<script src="../js/custom.js"></script>
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="../css/bootstrap.css">
+	<link rel="stylesheet" href="../css/bootstrap-grid.css">
+	<link rel="stylesheet" href="../css/bootstrap-reboot.css">
+	<link rel="stylesheet" href="../css/bootstrap-theme.css">
+	<link rel="stylesheet" href="../css/Custom/main.css">
+
+	<script>
+		$(document).ready(function () {
+			if (document.location.href.indexOf("layout") < 0) {
+				$("#tgtHeader").load("../layout/layout.html #lyNavbar", function () {
+
+				});
+				$("#tgtFooter").load("../layout/layout.html #lyFooter", function () {
+
+				});
+			}
+
+			$('#aHome').addClass("active");
+
+			$('#crslHeading').carousel({
+				interval: 3000
+			});
+
+			$('.carousel-item').hover(function () {
+				$(this).carousel('pause');
+			});
+
+			setFooterDate('#cYr')
+
+			$('.card').hover(function () {
+				var id = $(this).attr('id');
+				toggleInfo(id);
+			});
+		});
+	</script>
+
+
+</head>
+
+<container id="tgtHeader">
+	<!-- NavBar -->
+</container>
+
+<body id="bg-80">
+	<div class="position-relative overflow-hidden m-md-3 bg-op-blue">
+		<div class="p-lg-5 ">
+			<h1 class="display-4 font-weight-normal">Pop the 80's</h1>
+			<p class="lead font-weight-normal">
+					The 1980s opened with a tragic note when John Lennon was shot to death by a fan named Mark Chapman just as the former was coming back into the public eye with a new solo album. Lennon’s death triggered a global outpouring of grief. Speaking of genres, the 1980s introduced (or re-introduced) many of them such as the resurgence of heavy metal, the advent of new wave, hip-hop, rap music, hair metal, and pop, all of which influenced music in the present. The 1980s also reflected the beginning of an era of great gap when it comes to income. As many pop stars were becoming affluent during the 1980s, they wanted to prove to the world that they could be generous and have a serious intention by tackling certain causes. As a result, rock and artists contributed to the world by participating in charity concerts and recordings. These include Band Aid, We Are the World, as well as Live Aid and Farm Aid concerts.
+			</p>
+			<div class="product-device shadow-sm d-none d-md-block"></div>
+			<div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+		</div>
+	</div>
+	
+
+	
+	<div class="position-relative overflow-hidden m-md-3 bg-op-purple text-right">
+		<div class="p-lg-5 ">
+			<h1 class="display-4 font-weight-normal ">When the bubble Pops</h1>
+			<p class="lead font-weight-normal">
+					Pop stars and their music changed in the 1980s with the help of MTV and a greater focus on image. A new breed of mega-stars emerged, becoming iconic mascots for the genre and defining the decade through fashion, talent and persona. Some of the superstars to emerge were Madonna, Michael Jackson, Whitney Houston and Prince. They experienced a level of fame and success not seen since Elvis Presley and the Beatles. These stars influenced fashion through their music videos, giving fans a first-hand glimpse into emerging trends. Their songs set the gold standard for what pop music should be, and through constant reinvention they were able to navigate the pop culture world and keep themselves relevant.
+			</p>
+		</div>
+		<div class="product-device shadow-sm d-none d-md-block"></div>
+		<div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+	</div>
+
+	<!-- Row 1 -->
+	<div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+		<div class="w-100 bg-op-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+			<div class="my-3 py-3">
+				<div id="carouselMichaelJackson" class="carousel slide" data-ride="carousel">
+					<ol class="carousel-indicators">
+						<li data-target="#carouselMichaelJackson" data-slide-to="0" class="active"></li>
+						<li data-target="#carouselMichaelJackson" data-slide-to="1"></li>
+					</ol>
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+						<img src="../images/80s/img_MichaelJackson1.png" class="d-block w-100" alt="Michael Jackson Thriller Outfit">
+						</div>
+						<div class="carousel-item">
+						<img src="../images/80s/img_MichaelJackson2.png" class="d-block w-100" alt="Michael Jackson">
+						</div>
+					</div>
+					<a class="carousel-control-prev" href="#carouselMichaelJackson" role="button" data-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="carousel-control-next" href="#carouselMichaelJackson" role="button" data-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="sr-only">Next</span>
+					</a>
+				</div>
+				<h2 class="display-5">Michael Jackson</h2>
+				<p class="lead">
+						Born: Michael Joseph Jackson on August 29, 1958 in Gary, Indiana <br>
+						Died: June 25, 2009 in Los Angeles, California <br>
+						Known as the “King of Pop”, he was slowly coming into his own until he became a dominant figure in the 1980s. Jackson’s music videos, notably for “Beat It,” “Billie Jean” and “Thriller,” helped break down racial barriers and revolutionize the medium into an art form and promotional tool.						
+				</p>
+			</div>
+			<div class="text-left ">
+				<h5 class="display-5">Popular Songs</h5>
+				<ul style="list-style: none;">
+					<li><a href="https://www.youtube.com/watch?v=5X-Mrc2l1d0">Rock with You</a></li>
+					<li><a href="https://www.youtube.com/watch?v=Zi_XLOBDo_Y">Billie Jean</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<!-- Row 2 -->
+	<div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+		<div class="w-100 bg-op-blue mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+			<div class="my-3 py-3">
+				<div id="carouselMadonna" class="carousel slide" data-ride="carousel">
+					<ol class="carousel-indicators">
+						<li data-target="#carouselMadonna" data-slide-to="0" class="active"></li>
+						<li data-target="#carouselMadonna" data-slide-to="1"></li>
+					</ol>
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+						<img src="../images/80s/img_Madonna1.png" class="d-block w-100" alt="Madonna Cover">
+						</div>
+						<div class="carousel-item">
+						<img src="../images/80s/img_Madonna2.png" class="d-block w-100" alt="Madonna CloseUp">
+						</div>
+					</div>
+					<a class="carousel-control-prev" href="#carouselMadonna" role="button" data-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="carousel-control-next" href="#carouselMadonna" role="button" data-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="sr-only">Next</span>
+					</a>
+				</div>
+				<h2 class="display-5">Madonna</h2>
+				<p class="lead">
+						Born: Madonna Louise Ciccone on August 16, 1958 in Bay City, Michigan <br>
+						
+						Starting from a humble background, Madonna rose to become one of the one of the best-known musical figures in the 1980s. Her raunchy image, pleasure-celebrating dance music and bizarre music videos gave feminism a much-needed reshaping throughout the decade. She broke sexual boundaries and made eroticism one of the critical important elements of pop music, and challenging religious and social conventions.
+				</p>
+			</div>
+			<div class="text-left ">
+				<h5 class="display-5">Popular Songs</h5>
+				<ul style="list-style: none;">
+					<li><a href="https://www.youtube.com/watch?v=zpzdgmqIHOQ&list=PLtso_D2e-GWRaH8Fhncm9ZbQUeTCvos_6">La Isla Bonita</a></li>
+					<li><a href="hhttps://www.youtube.com/watch?v=6p-lDYPR2P8&list=PLtso_D2e-GWRaH8Fhncm9ZbQUeTCvos_6&index=4">Material Girl</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<!-- Row 3	 -->
+	<div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+		<div class="w-100 bg-op-purple mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+			<div class="my-3 py-3">
+				<div id="carouselPrince" class="carousel slide" data-ride="carousel">
+					<ol class="carousel-indicators">
+						<li data-target="#carouselPrince" data-slide-to="0" class="active"></li>
+						<li data-target="#carouselPrince" data-slide-to="1"></li>
+					</ol>
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+						<img src="../images/80s/img_Prince1.png" class="d-block w-100" alt="Prince Pointing">
+						</div>
+						<div class="carousel-item">
+						<img src="../images/80s/img_Prince2.png" class="d-block w-100" alt="Prince Guitar">
+						</div>
+					</div>
+					<a class="carousel-control-prev" href="#carouselPrince" role="button" data-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="carousel-control-next" href="#carouselPrince" role="button" data-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="sr-only">Next</span>
+					</a>
+				</div>
+				<h2 class="display-5">Prince</h2>
+				<p class="lead">
+						Born: Prince Roger Nelson on June 7, 1958 in Minneapolis, Minnesota <br>
+						Died: April 21, 2016 in Chanhassen, MN <br>
+						For over three decades, Prince has been known for his innovative, eclectic work, not to mention his flamboyant stage presence and a wide vocal range. Often referred to also as the “Artist Formerly Known as Prince,” the multi-instrumentalist artist found huge fame through his eponymous effort in 1979. Thanks to his eclectic blending of funk, R&B, soul, hip-hop, disco, jazz and pop plus his sexually-laced lyrics, Prince continued his success through his later records and received several awards throughout his career.
+				</p>
+			</div>
+			<div class="text-left ">
+				<h5 class="display-5">Popular Songs</h5>
+				<ul style="list-style: none;">
+					<li><a href="https://www.youtube.com/watch?v=UG3VcCAlUgE&list=PL8cFaF2b783IMywRod51qpahGewGEqNYP">When Doves Cry</a></li>
+					<li><a href="https://www.youtube.com/watch?v=UG3VcCAlUgE&list=PL8cFaF2b783IMywRod51qpahGewGEqNYP">Prince Raspberry Beret</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<!-- Row 4 -->
+	<div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+		<div class="w-100 bg-op-dark mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+			<div class="my-3 py-3">
+				<div id="carouselQueen" class="carousel slide" data-ride="carousel">
+					<ol class="carousel-indicators">
+						<li data-target="#carouselQueen" data-slide-to="0" class="active"></li>
+						<li data-target="#carouselQueen" data-slide-to="1"></li>
+					</ol>
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+						<img src="../images/80s/img_Queen.png" class="d-block w-100" alt="Queen Cover">
+						</div>
+						<div class="carousel-item">
+						<img src="../images/80s/img_Queen2.png" class="d-block w-100" alt="Queen Gang">
+						</div>
+					</div>
+					<a class="carousel-control-prev" href="#carouselQueen" role="button" data-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="carousel-control-next" href="#carouselQueen" role="button" data-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="sr-only">Next</span>
+					</a>
+				</div>
+				<h2 class="display-5">Queen</h2>
+				<p class="lead">
+					Formed: 1970 in London, England <br>
+					Queen is British rock band who reached the peak of their career in the 1970s and the 1980s. The group, who was then fronted by the charismatic late singer Freddy Mercury in their heyday, is well known for its sports anthems and classic rock songs, especially the hits “We Are the Champions” and the epic opera-rock “Bohemian Rhapsody” whose promotional video became one of the earliest successful music videos.
+				</p>
+			</div>
+			<div class="text-left ">
+				<h5 class="display-5">Popular Songs</h5>
+				<ul style="list-style: none;">
+					<li><a href="https://www.youtube.com/watch?v=rY0WxgSXdEE&list=PLeoBVKHKNsGq4F3u9q5VKnMWk-tYRfxfs">Another One Bites the Dust</a></li>
+					<li><a href="https://www.youtube.com/watch?v=f4Mc-NYPHaQ&list=PLeoBVKHKNsGq4F3u9q5VKnMWk-tYRfxfs&index=3">I Want to Break Free</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<!-- Row 6 -->
+	<div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+		<div class="w-100 bg-op-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+			<div class="my-3 py-3">
+				<div id="carouselGunsNRoses" class="carousel slide" data-ride="carousel">
+					<ol class="carousel-indicators">
+						<li data-target="#carouselGunsNRoses" data-slide-to="0" class="active"></li>
+						<li data-target="#carouselGunsNRoses" data-slide-to="1"></li>
+					</ol>
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+						<img src="../images/80s/img_GunsNRoses1.png" class="d-block w-100" alt="Band Cover">
+						</div>
+						<div class="carousel-item">
+						<img src="../images/80s/img_GunsNRoses2.png" class="d-block w-100" alt="Axel Jump">
+						</div>
+					</div>
+					<a class="carousel-control-prev" href="#carouselGunsNRoses" role="button" data-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="carousel-control-next" href="#carouselGunsNRoses" role="button" data-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="sr-only">Next</span>
+					</a>
+				</div>
+				<h2 class="display-5">Guns N' Roses</h2>
+				<p class="lead">
+					Formed: 1985 in Los Angeles, California <br>
+					Guns N' Roses brought raw, ugly rock & roll crashing back into the charts. They were not nice boys: nice boys don't play rock & roll. They were ugly, misogynistic, and violent; they were also funny, vulnerable, and occasionally sensitive, as their breakthrough hit, "Sweet Child O' Mine," showed.
+				</p>
+			</div>
+			<div class="text-left ">
+				<h5 class="display-5">Popular Songs</h5>
+				<ul style="list-style: none;">
+					<li><a href="https://www.youtube.com/watch?v=1w7OgIMMRc4">Sweet Child O’ Mine </a></li>
+					<li><a href="https://www.youtube.com/watch?v=8SbUC-UaAxE&list=PL2wCCiky2eR3F10yLWLaIU9oZ5MLUeW7-">November Rain</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer">
+		<footer id="lyFooter">
+			<p class="text-center">All Rights Reserved <container id="cYr"></container>.</p>
+		</footer>
+	</div>
+</body>
+</html>
