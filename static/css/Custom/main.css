@@ -152,16 +152,29 @@ body {
 }
 
 .bg-op-light {
-    background: rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.3);
+    color: black;
 }
 
 .bg-op-dark {
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
 }
+
+.bg-op-purple {
+    background: rgba(128, 0, 128, 0.3)
+    color: black;
+}
+
+.bg-op-blue {
+    background: rgba(0, 128, 255, 0.3);
+    color: white;
+}
+
 
 .group-header {
     /* background-color: white; */
-    background: rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.3);
 }
 
 /* .d-md-flex {
