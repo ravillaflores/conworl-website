@@ -1,0 +1,286 @@
+<!doctype html>
+
+<html>
+<head>
+	<title>ConWorl - The New Generation</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- javascript -->
+	<script src="../js/jquery-3.4.1.min.js"></script>
+	<script src="../js/bootstrap.js"></script>
+	<script src="../js/bootstrap.bundle.js"></script>
+	<script src="../js/custom.js"></script>
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="../css/bootstrap.css">
+	<link rel="stylesheet" href="../css/bootstrap-grid.css">
+	<link rel="stylesheet" href="../css/bootstrap-reboot.css">
+	<link rel="stylesheet" href="../css/bootstrap-theme.css">
+	<link rel="stylesheet" href="../css/Custom/main.css">
+
+	<script>
+		$(document).ready(function () {
+			if (document.location.href.indexOf("layout") < 0) {
+				$("#tgtHeader").load("../layout/layout.html #lyNavbar", function () {
+
+				});
+				$("#tgtFooter").load("../layout/layout.html #lyFooter", function () {
+
+				});
+			}
+
+			$('#aHome').addClass("active");
+
+			$('#crslHeading').carousel({
+				interval: 3000
+			});
+
+			$('.carousel-item').hover(function () {
+				$(this).carousel('pause');
+			});
+
+			setFooterDate('#cYr')
+
+			$('.card').hover(function () {
+				var id = $(this).attr('id');
+				toggleInfo(id);
+			});
+		});
+	</script>
+
+
+</head>
+
+<container id="tgtHeader">
+	<!-- NavBar -->
+</container>
+
+<body id="bg-00">
+	<div class="position-relative overflow-hidden m-md-3 bg-op-dark">
+		<div class="p-lg-5 ">
+			<h1 class="display-4 font-weight-normal">The New Millenia - 2000</h1>
+			<p class="lead font-weight-normal">
+				These artists have defined the music of the decade who also paved way for a new style and a new array of genres. Not only that, but these artists had also presented a huge influence on not just music but to fashion sense and statement as well. They raised up trends and made everyone download their songs into their mp3 players; songs that people would dance to, celebrate to, wept with, cry with and just… connect with
+			</p>
+			<div class="product-device shadow-sm d-none d-md-block"></div>
+			<div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+		</div>
+	</div>
+	
+	<nav class="position-relative overflow-hidden m-md-3">
+		<div class="nav nav-tabs" id="nav-tab" role="tablist">
+			<a class="nav-item nav-link " id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Rap</a>
+			<a class="nav-item nav-link active" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Rock</a>
+			<a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Pop and R&B</a>
+		</div>
+	</nav>
+
+	<div class="tab-content position-relative overflow-hidden m-md-3" id="nav-tabContent">
+
+		<!-- Rap -->
+		<div class="tab-pane fade" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+			
+			<!-- Row 1 -->
+			<div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+				<div class="w-100 bg-op-dark mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+					<div class="row">
+						<div class="col-4">	
+							<img class="card-img-top img-head" src="../images/2000s/img_eminem.png" alt="Eminem">
+							<h2 class="display-5">Eminem</h2>
+						</div>
+						<div class="col-8 text-left w-100 mt-3">	
+							<p class="lead">
+									Born: Marshall Bruce Mathers III was born on October 17 in 1972 <br>
+									Most famously known professionally as his stage name, Eminem. Eminem is known globally as an American rapper, songwriter, record producer, record executive, and actor. <br>
+									Eminem started out not only in a broken home, but a series of them. The artist we know today was raised by a single mom, lived hand to mouth, on and off welfare, constantly moving from one place to another but still pushed himself to reach his goals. After dropping out of high school, he pushed himself to begin competing in local rap battles, which resulted in earning respect for his craft from his peers and overall music scene. Once he broke into the scene, there was no stopping the “rap God”.									
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Row 2 -->
+			<div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+				<div class="w-100 bg-op-dark mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+					<div class="row">
+						<div class="col-8 text-right w-100 mt-3">	
+								<p class="lead">
+									Ludacris was born Christopher Brian Bridges on September 11, 1977, from two parents who were college students. <Br>
+									They split when he was little, but he didn’t have a turbulent upbringing until moving to Atlanta. Ludacris remained on good terms with both his mother and father throughout his entire life. At 12 years old, he moved to Atlanta. This forced him to quit his rap group Loudmouth Hooligans, but his career was far from over.	<br>
+									Ludacris is one of the most influential rappers of all time, patenting the “Dirty South” sound alongside Big Boy, Andre 3000 and OutKast. In his decades in the business, he’s amassed Grammy Awards, MTV Awards, and Screen Actors Guild Awards. He’s topped Forbes lists and transitioned to an actor in one of the most successful action movie franchises of all time.
+								</p>
+							</div>
+						<div class="col-4">	
+							<img class="card-img-top img-head" src="../images/2000s/img_ludacris.png" alt="Ludacris">
+							<h2 class="display-5">Ludacris</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End of RAP -->
+
+		
+		<!-- Rock -->
+		<div class="tab-pane fade show active" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+			<!-- Row 1 -->
+			<div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+				<div class="w-100 bg-op-blue mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+					<div class="row">
+						<div class="col-8 text-right w-100 mt-3">	
+								<p class="lead">
+									Born: Avril Ramona Lavigne was born on September 27, 1984, in Belleville, Ontario, Canada <br>
+									She spent most of her childhood in Napanee, Ontario. For more than a decade, Lavigne has enjoyed huge success with her punk-influenced pop sound. She has also branched out in new directions over the years, including starting her own fashion line. <br>
+									Lavigne sang all the time as a child, much to the chagrin of her two siblings. Raised by deeply religious parents, she first started performing in church choirs. Lavigne learned to play the guitar and began composing her own music as a teenager. At first, she reportedly focused on country music, eventually changing her tune. Leaving high school, she went first to New York City and then to Los Angeles to work with Arista Records.										
+								</p>
+							</div>
+						<div class="col-4">	
+							<img class="card-img-top img-head" src="../images/2000s/img_avril.png" alt="Avril">
+							<h2 class="display-5">Avril Lavigne</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Row 2-->
+			<div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+				<div class="w-100 bg-op-dark mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+					<div class="row">
+						<div class="col-4">	
+							<img class="card-img-top img-head" src="../images/2000s/img_falloutboy.png" alt="Fall Out Boy">
+							<h2 class="display-5">Fall Out Boy</h2>
+						</div>
+						<div class="col-8 text-left w-100 mt-3">	
+							<p class="lead">
+								Fall Out Boy rose to the forefront of emo pop in the mid-2000s, selling more than four million albums thanks to the band's tabloid-grabbing bassist, able-voiced frontman, and handful of Top 40 hits. The group's four members first came together in Wilmette, a bedroom community north of Chicago, around 2001. Vocalist/guitarist Patrick Stump, bassist/lyricist Pete Wentz, drummer Andrew Hurley, and guitarist Joe Trohman had all taken part in various bands connected to Chicago's underground hardcore scene. Most notably, Hurley drummed for Racetraitor, the furiously political metalcore outfit whose brief output was both a rallying point and sticking point within the hardcore community. As Fall Out Boy, the quartet used the unbridled intensity of hardcore as a foundation for melody-drenched pop-punk, with a heavy debt to the emo scene. They debuted with a self-released demo in 2001, following it up in May 2002 with a split LP (issued on the Uprising label) that also featured Project Rocket, for which Hurley also drummed. The band remained with the label for the release of a mini-LP, Fall Out Boy's Evening Out with Your Girl, but a bidding war of sorts was already in full swing.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Row 3 -->
+			<div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+				<div class="w-100 bg-op-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+					<div class="row">
+						<div class="col-8 text-right w-100 mt-3">	
+								<p class="lead">
+									My Chemical Romance (commonly abbreviated MCR or shortened to My Chem) was an American rock band from Newark, New Jersey, active from 2001 to 2013. The band's best-known lineup consisted of lead vocalist Gerard Way, guitarists Ray Toro and Frank Iero, bassist Mikey Way and drummer Bob Bryar, accompanied by keyboardist James Dewees. Founded by Gerard, Mikey, Toro, and Matt Pelissier (and later joined by Iero), the band signed to Eyeball Records and released their debut album, I Brought You My Bullets, You Brought Me Your Love, in 2002. They signed with Reprise Records the next year and released their major label debut, Three Cheers for Sweet Revenge, in 2004. Shortly after the album's release, Pelissier was replaced by Bob Bryar. A commercial success, the album was awarded platinum status over a year later.
+								</p>
+							</div>
+						<div class="col-4">	
+							<img class="card-img-top img-head" src="../images/2000s/img_mychemical.png" alt="My Chemical Romance">
+							<h2 class="display-5">My Chemical Romance</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Row 4-->
+			<div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+				<div class="w-100 bg-op-purp mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+					<div class="row">
+						<div class="col-4">	
+							<img class="card-img-top img-head" src="../images/2000s/img_blink182.png" alt="Blink 182">
+							<h2 class="display-5">Blink 182</h2>
+						</div>
+						<div class="col-8 text-left w-100 mt-3">	
+							<p class="lead">
+								Formed in Poway, California, in 1992 — when bassist Mark Hoppus' sister introduced him to guitarist Tom DeLonge, who was playing in a band called Big Oily Men — they recruited drummer Scott Raynor and began jamming out in DeLonge's garage. Originally saddled with the name Duck Tape, DeLonge rechristened the band as Blink, and they recorded a pair of demos (songs from the demos would later resurface on the band's first two albums). Drawing the attention of local label Cargo Music, they released their debut album, Cheshire Cat, in 1994. And though the album never made much of an impact commercially, it's often cited by bands and fans as an iconic release. Soon after, they drew the ire of an Irish band also named Blink, so they were forced to change their name to Blink-182. <br>
+								In 1997, they released Dude Ranch, and thanks to the success of singles like "Dammit" and "Josie," the album sold more than a million copies. While touring in support of the record, they parted was with drummer Raynor (under somewhat mysterious circumstances) and asked Travis Barker — who was drumming with tourmates the Aquabats — to fill in behind the kit for the remainder of the dates. Turns out, he would never leave.									
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Row 5 -->
+			<div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+				<div class="w-100 bg-op-blue mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+					<div class="row">
+						<div class="col-8 text-right w-100 mt-3">	
+								<p class="lead">
+									Foo Fighters is an American rock band, formed in Seattle, Washington, in 1994. It was founded by Nirvana drummer Dave Grohl as a one-man project following the dissolution of Nirvana after the suicide of Kurt Cobain. The group got its name from the UFOs and various aerial phenomena that were reported by Allied aircraft pilots in World War II, which were known collectively as "foo fighters". <br>
+									Prior to the release of Foo Fighters' 1995 debut album Foo Fighters, which featured Grohl as the only official member, Grohl recruited bassist Nate Mendel and drummer William Goldsmith, both formerly of Sunny Day Real Estate, as well as Nirvana touring guitarist Pat Smear to complete the lineup. The band began with performances in Portland, Oregon. Goldsmith quit during the recording of the group's second album, The Colour and the Shape (1997), when most of the drum parts were re-recorded by Grohl himself. Smear's departure followed soon afterward, though he would appear as a guest with the band frequently starting in 2006, and would rejoin as an official full-time member in 2011.										
+								</p>
+							</div>
+						<div class="col-4">	
+							<img class="card-img-top img-head" src="../images/2000s/img_foofighter.png" alt="Foo Fighters">
+							<h2 class="display-5">Foo Fighters</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Row 6-->
+			<div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+				<div class="w-100 bg-op-dark mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+					<div class="row">
+						<div class="col-4">	
+							<img class="card-img-top img-head" src="../images/2000s/img_coldplay.png" alt="Cold Play">
+							<h2 class="display-5">Coldplay</h2>
+						</div>
+						<div class="col-8 text-left w-100 mt-3">	
+							<p class="lead">
+								Coldplay are a British rock band formed in London in 1996. The four members – which include lead vocalist/pianist Chris Martin, lead guitarist Jonny Buckland, bassist Guy Berryman and drummer Will Champion – were at University College London and came together from 1996 to 1998. During these two years, the band changed names from Pectoralz, to Starfish, and finally, to Coldplay. Creative director and former manager Phil Harvey is often referred to as the fifth member by the band. They recorded and released two EPs: Safety in 1998 and The Blue Room in 1999. The latter was their first release on a major label, after signing to Parlophone.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Row 7 -->
+			<div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+				<div class="w-100 bg-op-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+					<div class="row">
+						<div class="col-8 text-right w-100 mt-3">	
+								<p class="lead">
+									Green Day is an American rock band formed in 1986 by lead vocalist and guitarist Billie Joe Armstrong and bassist Mike Dirnt. For much of the band's career, they have been a trio with drummer Tré Cool, who replaced John Kiffmeyer in 1990 prior to the recording of the band's second studio album, Kerplunk (1991). <br>
+									Green Day was originally part of the punk scene at the DIY 924 Gilman Street club in Berkeley, California. The band's early releases were with the independent record label Lookout! Records. In 1994, their major label debut Dookie, released through Reprise Records, became a breakout success and eventually shipped over 10 million copies in the U.S., Green Day is credited alongside fellow California punk bands including Sublime, Bad Religion, The Offspring and Rancid with popularizing mainstream interest in punk rock in the United States.										
+								</p>
+							</div>
+						<div class="col-4">	
+							<img class="card-img-top img-head" src="../images/2000s/img_greenday.png" alt="Green Day">
+							<h2 class="display-5">Green Day</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Row 8-->
+			<div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+				<div class="w-100 bg-op-purp mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+					<div class="row">
+						<div class="col-4">	
+							<img class="card-img-top img-head" src="../images/2000s/img_linkinpark.png" alt="Linkin Park">
+							<h2 class="display-5">Linkin Park</h2>
+						</div>
+						<div class="col-8 text-left w-100 mt-3">	
+							<p class="lead">
+								Linkin Park is an American rock band from Agoura Hills, California. The band's current lineup comprises vocalist/keyboardist/rhythm guitarist Mike Shinoda, lead guitarist Brad Delson, bassist Dave Farrell, DJ/keyboardist Joe Hahn, and drummer Rob Bourdon, all of whom are founding members. Vocalists Mark Wakefield and Chester Bennington and bassist Kyle Christner are former members of the band. <br>
+								Formed in 1996, Linkin Park rose to international fame with their debut studio album, Hybrid Theory (2000), which was certified diamond by the RIAA in 2005, and multi-platinum in several other countries. Their second album, Meteora (2003), continued the band's success, topping the Billboard 200 album chart in 2003, and was followed by extensive touring and charity work.[2] Having adapted nu metal and rap metal to a radio-friendly yet densely layered style in their first two albums, the band explored other genres on their third album, Minutes to Midnight (2007). The album topped the Billboard charts and had the third-best debut week of any album that year.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<!-- End of ROCK -->
+
+
+		<!-- POP R&B -->	
+		<div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+
+		</div>
+		<!-- End of POP -->
+	</div>
+
+	<div class="footer">
+		<footer id="lyFooter">
+			<p class="text-center">All Rights Reserved <container id="cYr"></container>.</p>
+		</footer>
+	</div>
+</body>
+</html>
